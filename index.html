@@ -10,6 +10,11 @@
     <!-- tailwaind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- fontAwesome cdn link cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,315 +22,409 @@
     <title>EventHost</title>
 </head>
 
-<body class="max-w-6xl mx-auto">
+<body>
+    <main class="max-w-6xl mx-auto">
+        <header>
 
-    <header>
-
-        <!-- Navbar -->
-        <nav class="nav-bgImg flex justify-between py-5 px-12 m-2">
-            <img class="w-28 h-5" src="./Resourcess/icon/EventHost.png" alt="">
-            <ul class="flex gap-4 text-white font-normal">
-                <li>Home</li>
-                <li>Events</li>
-                <li>About us</li>
-                <li>Contact</li>
-            </ul>
-            <div class="flex gap-6">
-                <img class="h-7 w-7 rounded-full border" src="./Resourcess/icon/fakhruddin-removebg-preview (1).png"
-                    alt="">
-                <img src="./Resourcess/icon/Group 7.png" alt="">
-            </div>
-        </nav>
-
-        <!-- Banner Section Start Here -->
-        <div class="mt-12">
-            <div class="relative">
-                <img class="h-auto w-full opacity-90" src="./Resourcess/Rectangle 8.png" alt="">
-                <div class="absolute inset-0 bg-black opacity-40 rounded-[34px]"></div>
-            </div>
-            <div class="absolute -mt-80 ml-32">
-                <h1 class="text-4xl font-bold text-white">CMA Fest</h1>
-                <h4 class="text-white my-2 font-light">Make memories that will last a lifetime. See your favorite <br>
-                    artists live
-                    at
-                    CMA Fest!</h4>
+            <!-- Navbar -->
+            <nav class="nav-bgImg flex justify-between py-5 px-12 m-2">
+                <img class="w-28 h-5" src="./Resourcess/icon/EventHost.png" alt="">
+                <ul class="flex gap-4 text-white font-normal">
+                    <li>Home</li>
+                    <li>Events</li>
+                    <li>About us</li>
+                    <li>Contact</li>
+                </ul>
                 <div class="flex gap-6">
-                    <button
-                        class="mt-4 bg-gradient-to-r from-[#7342F9] to-[#8053FA] text-white font-light py-2 px-7 rounded-lg flex items-center gap-2 justify-center">
-                        <img class="h-4" src="./Resourcess/icon/Vector.png" alt="">Get Ticket</button>
-                    <button class="mt-4 text-white font-light py-2 px-7 rounded-lg border">Explore
-                        all
-                        events</button>
+                    <img class="h-7 w-7 rounded-full border" src="./Resourcess/icon/fakhruddin-removebg-preview (1).png"
+                        alt="">
+                    <img src="./Resourcess/icon/Group 7.png" alt="">
+                </div>
+            </nav>
+
+            <!-- Banner Section Start Here -->
+            <div class="mt-12">
+                <div class="relative">
+                    <img class="h-auto w-full opacity-90" src="./Resourcess/Rectangle 8.png" alt="">
+                    <div class="absolute inset-0 bg-black opacity-40 rounded-[34px]"></div>
+                </div>
+                <div class="absolute -mt-80 ml-32">
+                    <h1 class="text-4xl font-bold text-white">CMA Fest</h1>
+                    <h4 class="text-white my-2 font-light">Make memories that will last a lifetime. See your favorite
+                        <br>
+                        artists live
+                        at
+                        CMA Fest!
+                    </h4>
+                    <div class="flex gap-6">
+                        <button
+                            class="mt-4 bg-gradient-to-r from-[#7342F9] to-[#8053FA] text-white font-light py-2 px-7 rounded-lg flex items-center gap-2 justify-center">
+                            <img class="h-4" src="./Resourcess/icon/Vector.png" alt="">Get Ticket</button>
+                        <button class="mt-4 text-white font-light py-2 px-7 rounded-lg border">Explore
+                            all
+                            events</button>
+                    </div>
+                </div>
+                <div class="flex gap-2 absolute right-1/2">
+                    <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-40"></h1>
+                    <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-90"></h1>
+                    <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-40"></h1>
                 </div>
             </div>
-            <div class="flex gap-2 absolute right-1/2">
-                <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-40"></h1>
-                <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-90"></h1>
-                <h1 class="h-4 w-4 bg-white rounded-full -mt-10 opacity-40"></h1>
+
+        </header>
+
+        <!-- Events Card Section Start  -->
+        <section>
+
+            <div class="text-center mt-12">
+                <h1 class="text-5xl font-bold mb-6">Events</h1>
+                <ul class="flex gap-5 mt-2 justify-center text-lg font-normal">
+                    <li>All</li>
+                    <li>For You</li>
+                    <li>This Day</li>
+                    <li>This Week</li>
+                    <li class="bg-[#7848f9] py-1 px-4 rounded-md text-white">Music</li>
+                    <li>Union</li>
+                </ul>
             </div>
-        </div>
 
-    </header>
-
-    <!-- Events Card Section Start  -->
-    <section>
-
-        <div class="text-center mt-12">
-            <h1 class="text-5xl font-bold mb-6">Events</h1>
-            <ul class="flex gap-5 mt-2 justify-center text-lg font-normal">
-                <li>All</li>
-                <li>For You</li>
-                <li>This Day</li>
-                <li>This Week</li>
-                <li class="bg-[#7848f9] py-1 px-4 rounded-md text-white">Music</li>
-                <li>Union</li>
-            </ul>
-        </div>
-
-        <div class="grid grid-cols-3 mt-8 justify-center justify-items-center">
-            <!-- Card one -->
-            <div class="p-6 shadow-lg rounded-xl bg-[#F1F3FF] relative">
-                <img src="./Resourcess/Rectangle 16.png" alt="" srcset="" />
-                <div class="pt-3">
-                    <div class="flex justify-between">
-                        <div>
-                            <button class="bg-[#7848f9] text-white rounded px-2">
-                                Music
-                            </button>
-                            <p class="mt-3">
-                                <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
-                            </p>
-                            <h5 class="text-base font-semibold mt-2">
-                                Roufian's HSC-34 Rag <br />
-                                Day
-                            </h5>
+            <div class="grid grid-cols-3 mt-8 justify-center justify-items-center">
+                <!-- Card one -->
+                <div class="p-6 rounded-2xl shadow-md bg-[#F1F3FF] relative">
+                    <img src="./Resourcess/Rectangle 16.png" alt="" srcset="" />
+                    <div class="border-b border-dashed border-[#7848f9] py-2"></div>
+                    <div class="pt-3">
+                        <div class="flex justify-between">
+                            <div>
+                                <button class="bg-[#7848f9] text-white rounded px-2">
+                                    Music
+                                </button>
+                                <p class="mt-3">
+                                    <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
+                                </p>
+                                <h5 class="text-xl font-semibold mt-2">
+                                    Roufian's HSC-24 Rag <br />
+                                    Day
+                                </h5>
+                            </div>
+                            <div>
+                                <div class="bg-white text-center p-1 rounded-md">
+                                    <p>Apr</p>
+                                    <p class="text-[#7848f9] text-2xl font-semibold">20</p>
+                                    <p>10:00 PM</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="bg-white text-center p-1 rounded-md">
-                                <p>Apr</p>
-                                <p class="text-[#7848f9] text-2xl font-semibold">20</p>
-                                <p>10:00 PM</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <div class="flex gap-2">
+                                <button
+                                    class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
+                                    <img src="./Resourcess/icon/Vector.png" alt="" />
+                                    <span class="ml-2">See Ticket</span>
+                                </button>
+                                <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
+                                    <span class="text-xl font-semibold text-[#7848f9]">20</span>
+                                    <div>
+                                        <p class="text-xs">Seat</p>
+                                        <p class="text-xs">Left</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div>
+                                <butto class="text-[#7848f9] cursor-pointer">
+                                    See More</butto>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-between items-center mt-3">
-                        <div class="flex gap-2">
-                            <button class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
-                                <img src="/images/icon/Vector.png" alt="" />
-                                <span class="ml-2">See Ticket</span>
-                            </button>
-                            <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
-                                <span class="text-xl font-semibold text-[#7848f9]">20</span>
-                                <div>
-                                    <p class="text-xs">Seat</p>
-                                    <p class="text-xs">Left</p>
-                                </div>
-                            </button>
-                        </div>
-                        <div>
-                            <butto class="text-[#7848f9] cursor-pointer">
-                                See More</butto>
-                        </div>
+                    <div class="absolute top-9 flex gap-32 right-10">
+                        <button class="bg-[#7848f9] text-white rounded px-2">
+                            Online
+                        </button>
+                        <button class="bg-[#7848f9] text-white rounded flex px-3 py-1 justify-center items-center">
+                            <img src="/Resourcess/icon/Heart.png" alt="" />
+                            <span class="ml-1">Favorite</span>
+                        </button>
                     </div>
                 </div>
-                <div class="absolute top-9 flex gap-36 right-10">
-                    <button class="bg-[#7848f9] text-white rounded px-2">
-                        Online
-                    </button>
-                    <button class="bg-[#7848f9] text-white rounded flex px-1 justify-center items-center">
-                        <img src="/images/icon/heart.png" alt="" />
-                        <span class="ml-1">Favorite</span>
-                    </button>
-                </div>
-            </div>
 
-            <!-- Card Two -->
-            <div class="p-6 shadow-lg rounded-xl bg-[#F1F3FF] relative">
-                <img src="./Resourcess/Rectangle 16-1.png" alt="" srcset="" />
-                <div class="pt-3">
-                    <div class="flex justify-between">
-                        <div>
-                            <button class="bg-[#7848f9] text-white rounded px-2">
-                                Music
-                            </button>
-                            <p class="mt-3">
-                                <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
-                            </p>
-                            <h5 class="text-base font-semibold mt-2">
-                                Roufian's HSC-34 Rag <br />
-                                Day
-                            </h5>
+                <!-- Card Two -->
+                <div class="p-6 shadow-md rounded-xl bg-[#F1F3FF] relative">
+                    <img src="./Resourcess/Rectangle 16-1.png" alt="" srcset="" />
+                    <div class="border-b border-dashed border-[#7848f9] py-2"></div>
+                    <div class="pt-3">
+                        <div class="flex justify-between">
+                            <div>
+                                <button class="bg-[#7848f9] text-white rounded px-2">
+                                    Music
+                                </button>
+                                <p class="mt-3">
+                                    <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
+                                </p>
+                                <h5 class="text-xl font-semibold mt-2">
+                                    Roufian's HSC-24 Rag <br />
+                                    Day
+                                </h5>
+                            </div>
+                            <div>
+                                <div class="bg-white text-center p-1 rounded-md">
+                                    <p>Apr</p>
+                                    <p class="text-[#7848f9] text-2xl font-semibold">20</p>
+                                    <p>10:00 PM</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="bg-white text-center p-1 rounded-md">
-                                <p>Apr</p>
-                                <p class="text-[#7848f9] text-2xl font-semibold">20</p>
-                                <p>10:00 PM</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <div class="flex gap-2">
+                                <button
+                                    class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
+                                    <img src="./Resourcess/icon/Vector.png" alt="" />
+                                    <span class="ml-2">See Ticket</span>
+                                </button>
+                                <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
+                                    <span class="text-xl font-semibold text-[#7848f9]">20</span>
+                                    <div>
+                                        <p class="text-xs">Seat</p>
+                                        <p class="text-xs">Left</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="text-[#7848f9] cursor-pointer">
+                                    See More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-between items-center mt-3">
-                        <div class="flex gap-2">
-                            <button class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
-                                <img src="/images/icon/Vector.png" alt="" />
-                                <span class="ml-2">See Ticket</span>
-                            </button>
-                            <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
-                                <span class="text-xl font-semibold text-[#7848f9]">20</span>
-                                <div>
-                                    <p class="text-xs">Seat</p>
-                                    <p class="text-xs">Left</p>
-                                </div>
-                            </button>
-                        </div>
-                        <div>
-                            <butto class="text-[#7848f9] cursor-pointer">
-                                See More</butto>
-                        </div>
+                    <div class="absolute top-9 flex gap-32 right-10">
+                        <button class="bg-[#7848f9] text-white rounded px-2">
+                            Online
+                        </button>
+                        <button class="bg-[#7848f9] text-white rounded flex px-3 py-1 justify-center items-center">
+                            <img src="./Resourcess/icon/Heart.png" alt="" />
+                            <span class="ml-1">Favorite</span>
+                        </button>
                     </div>
                 </div>
-                <div class="absolute top-9 flex gap-36 right-10">
-                    <button class="bg-[#7848f9] text-white rounded px-2">
-                        Online
-                    </button>
-                    <button class="bg-[#7848f9] text-white rounded flex px-1 justify-center items-center">
-                        <img src="/images/icon/heart.png" alt="" />
-                        <span class="ml-1">Favorite</span>
-                    </button>
-                </div>
-            </div>
 
-            <!-- Card Three -->
-            <div class="p-6 shadow-lg rounded-xl bg-[#F1F3FF] relative">
-                <img src="./Resourcess/Rectangle 16-2.png" alt="" srcset="" />
-                <div class="pt-3">
-                    <div class="flex justify-between">
-                        <div>
-                            <button class="bg-[#7848f9] text-white rounded px-2">
-                                Music
-                            </button>
-                            <p class="mt-3">
-                                <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
-                            </p>
-                            <h5 class="text-base font-semibold mt-2">
-                                Roufian's HSC-34 Rag <br />
-                                Day
-                            </h5>
+                <!-- Card Three -->
+                <div class="p-6 shadow-md rounded-xl bg-[#F1F3FF] relative">
+                    <img src="./Resourcess/Rectangle 16-2.png" alt="" srcset="" />
+                    <div class="border-b border-dashed border-[#7848f9] py-2"></div>
+                    <div class="pt-3">
+                        <div class="flex justify-between">
+                            <div>
+                                <button class="bg-[#7848f9] text-white rounded px-2">
+                                    Music
+                                </button>
+                                <p class="mt-3">
+                                    <i class="fa-solid fa-location-dot mr-2 text-[#7848f9]"></i>Celebrity Convention
+                                </p>
+                                <h5 class="text-xl font-semibold mt-2">
+                                    Roufian's HSC-24 Rag <br />
+                                    Day
+                                </h5>
+                            </div>
+                            <div>
+                                <div class="bg-white text-center p-1 rounded-md">
+                                    <p>Apr</p>
+                                    <p class="text-[#7848f9] text-2xl font-semibold">20</p>
+                                    <p>10:00 PM</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="bg-white text-center p-1 rounded-md">
-                                <p>Apr</p>
-                                <p class="text-[#7848f9] text-2xl font-semibold">20</p>
-                                <p>10:00 PM</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <div class="flex gap-2">
+                                <button
+                                    class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
+                                    <img src="/Resourcess/icon/Vector.png" alt="" />
+                                    <span class="ml-2">See Ticket</span>
+                                </button>
+                                <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
+                                    <span class="text-xl font-semibold text-[#7848f9]">20</span>
+                                    <div>
+                                        <p class="text-xs">Seat</p>
+                                        <p class="text-xs">Left</p>
+                                    </div>
+                                </button>
+                            </div>
+                            <div>
+                                <butto class="text-[#7848f9] cursor-pointer">
+                                    See More</butto>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-between items-center mt-3">
-                        <div class="flex gap-2">
-                            <button class="bg-[#7848f9] text-white flex justify-center items-center rounded px-2 py-1">
-                                <img src="/images/icon/Vector.png" alt="" />
-                                <span class="ml-2">See Ticket</span>
-                            </button>
-                            <button class="bg-white px-4 flex justify-center py-1 ml-2 rounded items-center">
-                                <span class="text-xl font-semibold text-[#7848f9]">20</span>
-                                <div>
-                                    <p class="text-xs">Seat</p>
-                                    <p class="text-xs">Left</p>
-                                </div>
-                            </button>
-                        </div>
-                        <div>
-                            <butto class="text-[#7848f9] cursor-pointer">
-                                See More</butto>
-                        </div>
+
+                    <div class="absolute top-9 flex gap-36 right-10">
+                        <button class="bg-[#7848f9] text-white rounded px-2">
+                            Online
+                        </button>
+                        <button class="bg-[#7848f9] text-white rounded flex px-3 py-1 justify-center items-center">
+                            <img src="./Resourcess/icon/Heart.png" alt="" />
+                            <span class="ml-1">Favorite</span>
+                        </button>
                     </div>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="absolute top-9 flex gap-36 right-10">
-                    <button class="bg-[#7848f9] text-white rounded px-2">
-                        Online
-                    </button>
-                    <button class="bg-[#7848f9] text-white rounded flex px-1 justify-center items-center">
-                        <img src="/images/icon/heart.png" alt="" />
-                        <span class="ml-1">Favorite</span>
-                    </button>
+        <!-- Host your Event Section -->
+        <section>
+            <div class="flex mt-20 gap-5 py-24 rounded-3xl bg-gradient-to-b from-[#7342F9] to-[#8053FA] relative">
+                <div class="w-2/5 ml-14">
+                    <img src="./Resourcess/Group 29.png" alt="">
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Host your Event Section -->
-    <section>
-        <div class="flex mt-20 gap-5 py-24 rounded-3xl bg-gradient-to-b from-[#7342F9] to-[#8053FA] relative">
-            <div class="w-2/5 ml-14">
-                <img src="./Resourcess/Group 29.png" alt="">
-            </div>
-            <div class="text-white w-3/5">
-                <h1 class="text-3xl font-bold py-3 pr-5">Host Your Event Easily & Automatedly With Us</h1>
-                <h3 class="text-2xl font-normal py-2 pr-14">We Provide The Best Event Ticketing & Management Solution</h3>
-                <p class="flex items-center gap-3 py-3"><img class="rounded-full h-7 w-7" src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Host Your Event With Easy Steps!</p>
-                <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7" src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Automated Payment System & Ticket Will Be Sent To Mail</p>
-                <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7" src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Access To Registation and Transection Reports</p>
-                <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7" src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Send Bulk Personalized Mail With Attachments</p>
-            </div>
-        </div>
-        <div class="absolute -mt-[261px] right-[98px]">
-            <img class="rounded-br-xl" src="./Resourcess/Group.png" alt="">
-        </div>
-    </section>
-
-    <!-- Automated QR Scanner Section -->
-    <section>
-        <div>
-            <h1 class="text-5xl text-center font-bold mt-14">Automated QR Scanner</h1>
-            <h3 class="text-center font-normal text-2xl my-3 text-[#7342F9]">Scan & Verify The Attendees Directly By Our
-                QR Scanning <br> Solution.</h3>
-        </div>
-
-        <div class="grid grid-cols-4 mt-8">
-            <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
-                <img class="p-4 border rounded-full bg-white" src="./Resourcess/icon/click (1) 1.png" alt="">
-                <h1 class="text-4xl font-bold mt-4">One Click</h1>
-                <p class="mt-1 text-gray-600">QR Verification System</p>
-            </div>
-            <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
-                <div class="p-4 rounded-full bg-white w-16 h-16">
-                    <img src="./Resourcess/icon/click.png" alt="">
+                <div class="text-white w-3/5">
+                    <h1 class="text-3xl font-bold py-3 pr-5">Host Your Event Easily & Automatedly With Us</h1>
+                    <h3 class="text-2xl font-normal py-2 pr-14">We Provide The Best Event Ticketing & Management
+                        Solution</h3>
+                    <p class="flex items-center gap-3 py-3"><img class="rounded-full h-7 w-7"
+                            src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Host Your Event With Easy Steps!</p>
+                    <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7"
+                            src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Automated Payment System & Ticket Will
+                        Be Sent To Mail</p>
+                    <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7"
+                            src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Access To Registation and Transection
+                        Reports</p>
+                    <p class="flex items-center gap-3 py-2"><img class="rounded-full h-7 w-7"
+                            src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Send Bulk Personalized Mail With
+                        Attachments</p>
                 </div>
-                <h1 class="text-4xl font-bold mt-4">One Time</h1>
-                <p class="mt-1 text-gray-600">QR Code</p>
-            </div>
-            <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
-                <img class="p-4 border rounded-full bg-white" src="./Resourcess/icon/check 1.png" alt="">
-                <h1 class="text-4xl font-bold mt-4">Easy Access</h1>
-                <p class="mt-1 text-gray-600">Lorem Ispum Access</p>
-            </div>
-            <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
-                <div class="p-4 rounded-full bg-white w-16 h-16">
-                    <img src="./Resourcess/icon/Vector-1.png" alt="">
+                <div class="absolute right-0 bottom-0">
+                    <img class="rounded-br-xl" src="./Resourcess/Group.png" alt="">
                 </div>
-                <h1 class="text-4xl font-bold mt-4">Mail</h1>
-                <p class="mt-1 text-gray-600">Send bulk personalized mail with attachments</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Simply Ticketing Section -->
-    <section>
-        <div class="text-center mt-12">
-            <h1 class="text-5xl font-bold">Simply Ticketing</h1>
-            <p class="text-[#7342F9] my-4 text-xl">First Ever Unique QR Ticketing <br> Platform For Event Registration & Booking</p>
-            <button class="flex mx-auto items-center gap-4 px-6 py-2 rounded-md text-white text-lg bg-gradient-to-r from-[#916ef2] to-[#7342F9]"><img src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Secure Payment With</button>
-        </div>
-        <div class="flex gap-1 justify-center bg-[#916ef2] bg-opacity-10 my-24">
-            <img class="bg-[#8C3494] pt-24 pb-14 pl-20  rounded-tl-3xl mt-40" src="./Resourcess/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo 1.png" alt="">
-            <img class="bg-[#ED0A80] pt-56 pb-32 pl-20 pr-20  rounded-tl-3xl rounded-tr-3xl" src="./Resourcess/image 9.png" alt="">
-            <img class="bg-gradient-to-r from-[#F7941D] to-[#ED1C24] pt-48 pb-24 pr-32 pl-12  rounded-tr-3xl mt-40" src="./Resourcess/Group 40.png" alt="">
-        </div>
-    </section>
+        <!-- Automated QR Scanner Section -->
+        <section>
+            <div>
+                <h1 class="text-5xl text-center font-bold mt-14">Automated QR Scanner</h1>
+                <h3 class="text-center font-normal text-2xl my-3 text-[#7342F9]">Scan & Verify The Attendees Directly By
+                    Our
+                    QR Scanning <br> Solution.</h3>
+            </div>
 
+            <div class="grid grid-cols-4 mt-8">
+                <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
+                    <img class="p-4 border rounded-full bg-white" src="./Resourcess/icon/click (1) 1.png" alt="">
+                    <h1 class="text-4xl font-bold mt-4">One Click</h1>
+                    <p class="mt-1 text-gray-600">QR Verification System</p>
+                </div>
+                <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
+                    <div class="p-4 rounded-full bg-white w-16 h-16">
+                        <img src="./Resourcess/icon/click.png" alt="">
+                    </div>
+                    <h1 class="text-4xl font-bold mt-4">One Time</h1>
+                    <p class="mt-1 text-gray-600">QR Code</p>
+                </div>
+                <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
+                    <img class="p-4 border rounded-full bg-white" src="./Resourcess/icon/check 1.png" alt="">
+                    <h1 class="text-4xl font-bold mt-4">Easy Access</h1>
+                    <p class="mt-1 text-gray-600">Lorem Ispum Access</p>
+                </div>
+                <div class="w-[274px] h-52 mx-auto rounded-3xl border px-6 py-4 bg-[#7342F9] bg-opacity-5">
+                    <div class="p-4 rounded-full bg-white w-16 h-16">
+                        <img src="./Resourcess/icon/Vector-1.png" alt="">
+                    </div>
+                    <h1 class="text-4xl font-bold mt-4">Mail</h1>
+                    <p class="mt-1 text-gray-600">Send bulk personalized mail with attachments</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Simply Ticketing Section -->
+        <section>
+            <div class="text-center mt-12">
+                <h1 class="text-5xl font-bold">Simply Ticketing</h1>
+                <p class="text-[#7342F9] my-4 text-xl">First Ever Unique QR Ticketing <br> Platform For Event
+                    Registration & Booking</p>
+                <button
+                    class="flex mx-auto items-center gap-4 px-6 py-2 rounded-md text-white text-lg bg-gradient-to-r from-[#916ef2] to-[#7342F9]"><img
+                        src="./Resourcess/icon/fi-sr-shield-check.png" alt="">Secure Payment With</button>
+            </div>
+            <div class="flex gap-1 justify-center bg-gradient-to-b from-[#ffff] to-[#c7c0d9] mt-12 mb-24 rounded-bl-[32px] rounded-br-[32px] pt-12">
+                <div class="relative">
+                    <img class="bg-[#8C3494] pt-24 pb-[108px] pl-20 rounded-tl-3xl mt-40"
+                        src="./Resourcess/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo 1.png" alt="" />
+                    <div class="w-14 h-3 rounded-lg bg-white absolute top-[175px] right-[70px]"><button></button></div>
+                </div>
+                <div class="relative">
+                    <img class="bg-[#ED0A80] pt-56 pb-[182px] pl-20 pr-20 rounded-tl-3xl rounded-tr-3xl"
+                        src="./Resourcess/image 9.png" alt="" />
+                    <div class="w-14 h-3 rounded-lg bg-white absolute top-[16px] left-[135px]"><button></button></div>
+                </div>
+                <div class="relative">
+                    <img class="bg-gradient-to-r from-[#F7941D] to-[#ED1C24] pt-36 pb-[59px] pr-32 pl-12 rounded-tr-3xl mt-40"
+                        src="./Resourcess/Group 40.png" alt="" />
+                    <div class="w-14 h-3 rounded-lg bg-white absolute top-[175px] left-[70px]"><button></button></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer start -->
+    <footer class="bg-gradient-to-tl from-[#9b7df0] to-[#591BFF]  h-[480px] mt-24 flex justify-center items-center">
+        <section class="max-w-7xl mx-auto text-white">
+            <div class="grid grid-cols-4 gap-2 justify-center justify-items-center">
+                <div>
+                    <img class="w-44" src="./Resourcess/icon/EventHost.png" alt="" />
+                    <p class="mt-7">
+                        IDEA Project, ICT Tower (0th Floor), <br />
+                        Plot: E-14X, Agargaon, <br />
+                        Dhaka - 1207 02222-222222, 01111111111
+                    </p>
+                </div>
+                <div>
+                    <ul class="flex-col gap-4 space-y-2 text-white font-normal">
+                        <li>Home</li>
+                        <li>Events</li>
+                        <li>About us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex-col gap-4 space-y-1 text-white font-normal">
+                        <li>Event Dashboard</li>
+                        <li>Terms & Condition</li>
+                        <li>Privacy & Refund Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex-col gap-4 text-white font-normal">
+                        <li>Follow Us</li>
+                        <ul class="flex gap-8 mt-2 text-white font-normal">
+                            <li>
+                                <i class="fa-brands fa-facebook text-2xl cursor-pointer"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram text-2xl cursor-pointer"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin text-2xl cursor-pointer"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-youtube text-2xl cursor-pointer"></i>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t-2 w-full mt-16 flex justify-between opacity-75 items-center">
+                <div class="flex items-center gap-4 mt-4">
+                    <p>Pay With</p>
+                    <img class="w-12" src="./Resourcess/image 9.png" alt="" />
+                    <img class="w-6" src="./Resourcess/Group 40.png" alt="" />
+                    <img class="w-9" src="./Resourcess/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo 1.png" alt="" />
+                </div>
+                <p class="mt-2">
+                    <small>©2024 EventHost & <span class="underline">UVTR.</span> All right
+                        reserved.</small>
+                </p>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
